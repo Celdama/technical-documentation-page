@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -17,16 +18,16 @@
       <header>Celdama Docs</header>
       <ul>
         <li>
-          <a class="nav-link" href="#">CSS</a>
+          <a class="nav-link" href="#css">CSS</a>
         </li>
         <li>
-          <a class="nav-link" href="#">React</a>
+          <a class="nav-link" href="#react">React</a>
         </li>
         <li>
-          <a class="nav-link" href="#">HTML</a>
+          <a class="nav-link" href="#html">HTML</a>
         </li>
         <li>
-          <a class="nav-link" href="#">HTTP</a>
+          <a class="nav-link" href="#http">HTTP</a>
         </li>
         <li>
           <a class="nav-link" href="#javascript">JavaScript</a>
@@ -36,14 +37,25 @@
     <main id="main">
       <section id="css" class="main-section">
         <header>
-          <h2>CSS</h2>
+          <h2><span>CSS</span></h2>
         </header>
         <p>
-          Use this CSS reference to browse an alphabetical index of all the
-          standard CSS properties, pseudo-class, pseudo-elements, data types,
-          functional notations and at-rules. You can also browse key CSS
-          concepts and a list of selectors organized by type. Also included is a
-          brief DOM-CSS reference.
+          Use this CSS reference to
+          <a
+            class="content-link"
+            target="_blank"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            >browse an alphabetical</a
+          >
+          index of all the standard CSS properties,
+          <a
+            class="content-link"
+            target="_blank"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+            >pseudo-class</a
+          >, pseudo-elements, data types, functional notations and at-rules. You
+          can also browse key CSS concepts and a list of selectors organized by
+          type. Also included is a brief DOM-CSS reference.
         </p>
         <h3>Basic rule syntax</h3>
         <h4>Style rule syntax</h4>
@@ -55,7 +67,6 @@
               }
           </code>
         </pre>
-        <p>...where :</p>
         <pre>
           <code class="language-ruby">
             selectors-list ::=
@@ -71,7 +82,6 @@
           The syntax for each specified value depends on the data types for
           defined for each specified property.
         </p>
-        <h5>Style rule examples</h5>
         <pre>
           <code class="language-ruby">
             strong {
@@ -91,7 +101,7 @@
       </section>
       <section id="react" class="main-section">
         <header>
-          <h2>React</h2>
+          <h2><span>React</span></h2>
         </header>
         <p>The smallest React example looks like this:</p>
         <pre>
@@ -133,7 +143,7 @@
       </section>
       <section id="html" class="main-section">
         <header>
-          <h2>HTML</h2>
+          <h2><span>HTML</span></h2>
         </header>
         <p>
           HTML (HyperText Markup Language) is the most basic building block of
@@ -161,7 +171,7 @@
       </section>
       <section id="http" class="main-section">
         <header>
-          <h2>HTTP</h2>
+          <h2><span>HTTP</span></h2>
         </header>
         <p>
           Hypertext Transfert Protocol (HTTP) is an application-layer protocol
@@ -205,7 +215,7 @@
       </section>
       <section id="javascript" class="main-section">
         <header>
-          <h2>JavaScript</h2>
+          <h2><span>JavaScript</span></h2>
         </header>
         <p>
           The JavaScript reference serves as a repository of facts about the
@@ -282,6 +292,5 @@
     <script>
       hljs.highlightAll();
     </script>
-    -->
   </body>
 </html>
